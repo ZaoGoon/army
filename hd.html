@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+	<style type="text/css">
+		*{
+			margin: 0 0;
+			padding: 0 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		ul li{
+			list-style-type: none;
+		}
+		.qh{
+			width: 100%;	
+			position: absolute;
+			display: block;
+			min-width: 1280px;
+			z-index: 999;
+		}
+		.qh p{
+			    width: 1280px;
+			    height: 50px;
+			    margin: 0 auto;
+			    /*background-color: lightskyblue;*/
+			    /*float: right;*/
+			   
+			   
+		}
+		.nav{
+			width: 100%;
+		    height: 100px;
+		    top: 50px;
+		    position: absolute;
+		    background-color: rgba(255,255,255,0.5);
+		    min-width: 1280px;
+		    z-index: 999;
+		}
+		.nav >ul{
+			width: 1000px;
+			margin: 0 auto;
+			min-width: 1280px;
+		}
+		.nav >ul >li{
+			float: left;
+			width: 150px;
+			list-style-type: none;
+			text-align: center;
+			margin-left: 50px;
+			/*line-height: 100px;*/
+			padding: 30px 0px;
+		}
+		.nav >ul >li >a{
+			color: darkolivegreen;
+			font-size: 30px;
+		}
+		.nav a:hover{
+			
+			color: #4dcafe;
+		}
+		.banner{
+			    width: 100%;
+			    height: 1000px;
+			    /*background: url(img/陆军.jpg);
+			    background-size: 100% 100%;*/
+			    min-width: 1280px;
+		}
+		.content1{
+			    width: 100%;
+			    margin-top: 50px;
+			    /*background-color: palegreen;*/
+			   min-width: 1280px;
+		}
+		.box{
+			    width: 1280px;
+			    height: 560px;
+			    margin: auto;
+			    min-width: 1280px;
+		}
+		.wow{
+			width: 1280px;
+		    height: 54px;
+		    margin: auto;
+		    padding: 15px 0;
+		    /*background-color: lightskyblue;*/
+		    min-width: 1280px;
+		}
+		.content1-one{
+			width: 400px;
+		    height: 462px;
+		    float: left;
+		    
+		    
+		    /*background-color: lightcoral;*/
+		}
+		.content1-two{
+			width: 400px;
+		    height: 462px;
+		    float: left;
+		    margin: 0 40px;
+			/*background-color: lightcoral;*/
+		}
+		.content2{
+			width: 100%;
+    		padding-top: 25px;
+    		min-width: 1280px;
+		}
+		.content2 .box{
+		    width: 1280px;
+		    height: 1300px;
+		    margin: auto;
+		    min-width: 1280px;
+		}
+		.content2-one{
+			width: 1280px;
+   			height: 540px;
+		}
+		.content2-two{
+			width: 1280px;
+   			height: 540px;
+		}
+		.content2-three{
+			    width: 272px;
+			    height: 72px;
+			    margin: 10px auto;
+			    border-radius: 20px;
+			    border: 1px solid #4dcafe;;
+		}
+		.content2-three a{
+			    display: block;
+			   /* margin: 0 auto;*/
+			    line-height: 70px;
+			    text-align: center;
+			    color: #4dcafe;
+		}
+		.content2-three:hover{
+			    border-color: darkolivegreen;
+		}
+		.content2-three:hover a{
+			    color: darkolivegreen;
+		}
+		.content2 .box .content2-one .img-1{
+			    width: 700px;
+			    height: 500px;
+			    float: left;
+			    margin-right: 30px;
+			    background-color: lightcoral;
+			    overflow: hidden;
+		}
+		.content2 .box .content2-one .img-2{
+			width: 550px;
+		    height: 230px;
+		    float: left;
+		    margin-bottom: 20px;
+		    background-color: lightcoral;
+		    overflow: hidden;
+		}
+		.content2 .box .content2-one .img-3{
+			    width: 550px;
+			    height: 250px;
+			    float: left;
+			    background-color: lightcoral;
+			    overflow: hidden;
+		}
+		.content2 .box .content2-two .img-1{
+			    width: 700px;
+			    height: 500px;
+			    float: right;
+			    background-color: lightcoral;
+			    overflow: hidden;
+		}
+		.content2 .box .content2-two .img-2{
+			width: 550px;
+		    height: 230px;
+		    float: left;
+		    margin-bottom: 20px;
+		    background-color: lightcoral;
+		    overflow: hidden;
+		}
+		.content2 .box .content2-two .img-3{
+			width: 550px;
+		    height: 250px;
+		    float: left;
+		    background-color: lightcoral;
+		    overflow: hidden;
+		}
+		.content3{
+			    width: 100%;
+			    padding-top: 25px;
+			    /*background-color: #ebf5e6;*/
+			    min-width: 1280px;
+		}
+		.content3 .box{
+			    width: 1280px;
+			    height: 1280px;
+			    margin: auto;
+			    min-width: 1280px;
+		}
+		.content3 .box .nr{
+			    width: 1280px;
+    			height: 585px;
+    			
+		}
+		.content3 .box .nr img {
+			    width: 820px;
+			    height: 545px;
+			    float: left;
+			    background-color: lightcyan;
+		}
+
+		.content3 .box .nr .size {
+			    width: 460px;
+			    height: 545px;
+			    float: left;
+			    background-color: gray;
+		}
+		.footer {
+		    width: 100%;
+		    height: 200px;
+		    background-color: #333;
+		    min-width: 1280px;
+		}
+		.img_sf{
+			width: 400px;
+		    height: 320px;
+		    float: left;
+		    overflow: hidden;
+		    
+		    /*background-color: lightcoral;*/
+		}
+		.img_sf img{
+		  cursor: pointer;
+		  transition: all 0.6s !important;
+		}
+		.img_sf img:hover{
+		  transform: scale(1.2) !important;
+		}
+		.img-1 img{
+		  cursor: pointer;
+		 
+		}
+		.img-1 img:hover {
+			transition: all 0.6s !important;
+		  transform: scale(1.2) !important;
+		}
+		.img-2 img{
+		  cursor: pointer;
+		  transition: all 0.6s !important;
+		}
+		.img-2 img:hover{
+		  transform: scale(1.2) !important;
+		}
+		.img-3 img{
+		  cursor: pointer;
+		  transition: all 0.6s !important;
+		}
+		.img-3 img:hover{
+		  transform: scale(1.2) !important;
+		}
+		
+		.swiper-container {
+	      width: 100%;
+	      height: 1000px;
+	      margin-left: auto;
+	      margin-right: auto;
+	      
+	      min-width: 1280px;
+	    }
+	    .swiper-container img{
+	    	width: 100%;
+	    	height: 100%;
+	    	
+	    }
+	    .swiper-slide {
+	      text-align: center;
+	      font-size: 18px;
+	      background: #fff;
+	
+	      
+	    }
+	    .nav_li{
+	    	display: none;
+	    	margin-top: 30px;
+	    }
+	    .nav_li li{
+	    	clear: both;
+	    	width: 100%;
+	    	padding: 10px 10px;
+	    	color: darkolivegreen;
+	    	text-align: center;
+	    	background-color: rgba(255,255,255,0.5);
+	    	/*display: none;*/
+	    }
+	    .nav>ul>li:hover .nav_li{
+	    	display: block;
+	    }
+	    .nav>ul>li:hover .nav_li>a{
+	    	color: #4dcafe;
+	    }
+	</style>
+	<body>
+		<div class="qh">
+			<p><a href="#" style="float: right;line-height: 50px;color: black;">中文版/English</a></p>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">中国陆军</a>
+					<ul class="nav_li">
+						<li><a>陆军装备</a></li>
+						<li><a>陆军简介</a></li>
+						<li><a>关于陆军</a></li>
+					</ul>
+				</li>
+				<li><a href="#">中国空军</a>
+					<ul class="nav_li">
+						<li><a>空军装备</a></li>
+						<li><a>空军简介</a></li>
+						<li><a>关于空军</a></li>
+					</ul>
+				</li>
+				<li><a href="#">中国海军</a>
+					<ul class="nav_li">
+						<li><a>海军装备</a></li>
+						<li><a>海军简介</a></li>
+						<li><a>关于海军</a></li>
+					</ul>
+				</li>
+				<li><a href="#">关于我们</a>
+					<ul class="nav_li">
+						<li><a>团队介绍</a></li>
+						<li><a>联系方式</a></li>
+						
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="banner">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide"><img src="img/陆军.jpg"/></div>
+			      <div class="swiper-slide"><img src="img/4.jpg"/></div>
+			      <div class="swiper-slide"><img src="img/hj.jpg"/></div>
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			    <!-- Add Arrows -->
+			    <div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div>
+			</div>
+		</div>
+	</body>
+</html>
