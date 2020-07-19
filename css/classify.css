@@ -1,0 +1,257 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	-webkit-tap-highlight-color: transparent;
+	/*点击高亮我们需要清除清除  设置 transparent 完成透明*/
+}
+
+input {
+	/*在移动端浏览器默认的外观在iOS上加上这个属性才能给按钮和输入框自定义样式*/
+	-webkit-appearance: none;
+}
+
+
+/*禁止长按页面时的弹出菜单*/
+
+img,
+a {
+	-webkit-touch-callout: none;
+}
+
+
+/*顶部*/
+
+body {
+	width: 100%;
+	margin: 0 auto;
+	min-width: 320px;
+	max-width: 640px;
+	background: #fff;
+	font-size: 14px;
+	font-family: -apple-system, Helvetica, sans-serif;
+	color: #666;
+	line-height: 1.5;
+	/*background-color: #ADADAD;*/
+}
+
+ul li {
+	list-style-type: none;
+}
+
+ol li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.classify-wrap {
+	position: fixed;
+	width: 100%;
+	height: 44px;
+	overflow: hidden;
+	min-width: 320px;
+	max-width: 640px;
+	background: red;
+	z-index: 100;
+}
+
+.classify-btn {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	/*background: pink;*/
+	width: 40px;
+	height: 44px;
+}
+
+.classify-btn::before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 18px;
+	background: url(../img/s-btn.png) no-repeat;
+	background-size: 20px 18px;
+	margin: 14px 0px 0px 15px;
+}
+
+.classify-login {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	/*background: blueviolet;*/
+	width: 40px;
+	height: 44px;
+	color: #fff;
+	line-height: 44px;
+}
+
+.classify-inp {
+	position: relative;
+	height: 30px;
+	background: #FFF;
+	margin: 0px 50px;
+	border-radius: 15px;
+	margin-top: 7px;
+}
+
+.classify-inp input {
+	width: 50%;
+	height: 30px;
+	border: none;
+	margin-left: 80px;
+	outline: none;
+}
+
+.jd-icon {
+	width: 20px;
+	height: 15px;
+	position: absolute;
+	top: 8px;
+	left: 13px;
+	background: url(../img/jd.png) no-repeat;
+	background-size: 20px 15px;
+}
+
+.jd-icon::after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 15px;
+	background: #ccc;
+	position: absolute;
+	right: -8px;
+	top: 0px;
+}
+
+.sou {
+	position: absolute;
+	top: 8px;
+	left: 50px;
+	width: 18px;
+	height: 15px;
+	background: url(../img/jd-sprites.png) no-repeat -81px 0px;
+	background-size: 200px auto;
+}
+
+
+/*左侧菜单栏*/
+.classify-F{
+	height: 1000px;
+	min-width: 320px;
+	max-width: 640px;
+}
+.classify-left {
+	width: 18%;
+	background: #D9D9D9;
+	float: left;
+	margin-top: 44px;
+}
+
+.classify-left ul li {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+
+.classify-left ul li a {
+	color: #737373;
+	font-size: 14px;
+}
+
+.classify-left ul li.classify-left1 {
+	background: #FFFFFF;
+	font-weight: bold;
+	color: #000000;
+}
+
+.classify-left ul li.classify-left1 a {
+	color: #000000;
+}
+
+
+/*内容部分*/
+
+.classify-content {
+	width: 80%;
+	height: 770px;
+	float: right;
+	/*background: #A94442;*/
+	margin-top: 44px;
+}
+
+.classify-img {
+	width: 100%;
+}
+
+.classify-img img {
+	width: 100%;
+}
+
+.classify-recommend {
+	width: 100%;
+	height: 20px;
+	margin-top: 20px;
+}
+
+.classify-recommend span {
+	font-size: 14px;
+	color: #000000;
+}
+
+.classify-content1 {
+	width: 100%;
+}
+
+.classify-content1 ul li {
+	width: 33.33%;
+	float: left;
+	margin-top: 10px;
+}
+
+.classify-content1 ul li a img {
+	width: 100%;
+}
+
+.classify-content1 ul li a p {
+	text-align: center;
+	font-size: 15px;
+	color: #000000;
+	margin-top: 10px;
+}
+
+
+/*底部导航条*/
+
+.box {
+	width: 100%;
+	height: 50px;
+	background: #FFFFFF;
+	position: fixed;
+	min-width: 320px;
+	max-width: 640px;
+	z-index: 9999;
+	bottom: 0px;
+}
+
+.box ul li {
+	float: left;
+	width: 25%;
+	/*background-color: #31B0D5;*/
+	text-align: center;
+}
+
+.box ul li p img {
+	width: 25px;
+}
+
+.box ul li a {
+	font-size: 15px;
+	color: #696669;
+}

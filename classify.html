@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>品优购分类</title>
+		<!--引入分类css文件-->
+		<link rel="stylesheet" type="text/css" href="css/classify.css" />
+	</head>
+
+	<body>
+		<!--顶部-->
+		<div class="classify-wrap">
+			<div class="classify-btn"></div>
+			<div class="classify-inp">
+				<input type="text" placeholder="金龙鱼调和油" />
+				<div class="jd-icon"></div>
+				<div class="sou"></div>
+			</div>
+			<div class="classify-login">搜索</div>
+		</div>
+		<div class="classify-F">
+			<!--左侧菜单栏-->
+			<div class="classify-left">
+				<ul>
+					<li class="classify-left1">
+						<a href="javascript:;">推荐分类</a>
+					</li>
+					<li>
+						<a href="javascript:;">汽车生活</a>
+					</li>
+					<li>
+						<a href="javascript:;">手机数码</a>
+					</li>
+					<li>
+						<a href="javascript:;">商城超市</a>
+					</li>
+					<li>
+						<a href="javascript:;">国际品牌</a>
+					</li>
+					<li>
+						<a href="javascript:;">品优国际</a>
+					</li>
+					<li>
+						<a href="javascript:;">时尚男装</a>
+					</li>
+					<li>
+						<a href="javascript:;">时尚女装</a>
+					</li>
+					<li>
+						<a href="javascript:;">时尚男鞋</a>
+					</li>
+					<li>
+						<a href="javascript:;">时尚女鞋</a>
+					</li>
+					<li>
+						<a href="javascript:;">美妆护肤</a>
+					</li>
+					<li>
+						<a href="javascript:;">电脑办公</a>
+					</li>
+					<li>
+						<a href="javascript:;">家居家装</a>
+					</li>
+				</ul>
+			</div>
+			<!--内容部分-->
+			<div class="classify-content">
+				<div class="classify-img">
+					<img src="upload/classify-img.dpg" />
+				</div>
+				<div class="classify-recommend">
+					<span>常用分类</span>
+				</div>
+				<div class="classify-content1">
+					<ul>
+						<li>
+							<a href="javascript:;"><img src="img/classify1.jpg" />
+								<p>空调</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/classify2.jpg" />
+								<p>冰箱</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/classify3.png" />
+								<p>电脑</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/classify4.png" />
+								<p>手机</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/classify5.jpg" />
+								<p>全面屏手机</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/classify6.jpg" />
+								<p>游戏手机</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--底部导航条-->
+		<div class="box">
+			<ul>
+				<li>
+					<a href="index.html">
+						<p><img src="img/souye.png" /></p>首页</a>
+				</li>
+				<li>
+					<a href="classify.html">
+						<p><img src="img/classify.png" /></p>分类</a>
+				</li>
+				<li>
+					<a href="shopping.html">
+						<p><img src="img/shopping.png" /></p>购物车</a>
+				</li>
+				<li>
+					<a href="my.html">
+						<p><img src="img/my.png" /></p>我的</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var classify_left = document.querySelector('.classify-left');
+		var lis = classify_left.querySelectorAll('li');
+
+		for(var i = 0; i < lis.length; i++) {
+			lis[i].setAttribute('index', i);
+			lis[i].onclick = function() {
+				for(var i = 0; i < lis.length; i++) {
+					lis[i].className = '';
+				}
+				//留下自己的
+				this.className = 'classify-left1';
+			}
+		}
+	</script>
+
+</html>
